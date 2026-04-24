@@ -839,3 +839,315 @@ h3 {
     min-height: 330px;
   }
 }
+
+/* Interior pages */
+.page-main {
+  position: relative;
+  z-index: 3;
+}
+
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: var(--primary-dark);
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(12, 24, 33, 0.92) 0%, rgba(12, 24, 33, 0.72) 50%, rgba(12, 24, 33, 0.32) 100%),
+    url("../img/waunamesh/waunakee-water-tower.jpg") center / cover no-repeat;
+  transform: scale(1.01);
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 90px;
+  background: linear-gradient(180deg, rgba(246, 242, 232, 0), var(--bg));
+}
+
+.page-hero-inner {
+  position: relative;
+  z-index: 2;
+  padding: 110px 0 130px;
+  max-width: 860px;
+}
+
+.compact-hero .page-hero-inner {
+  padding-top: 96px;
+  padding-bottom: 116px;
+}
+
+.page-hero h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 6vw, 5.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.075em;
+}
+
+.page-hero p:not(.kicker) {
+  max-width: 720px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+}
+
+.narrow {
+  max-width: 940px;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.inner-section {
+  padding-top: 58px;
+  padding-bottom: 0;
+}
+
+.guide-step {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 1.2rem;
+  padding: 1.6rem;
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  box-shadow: 0 18px 45px rgba(16, 30, 54, 0.06);
+}
+
+.guide-step h2 {
+  font-size: clamp(1.75rem, 3vw, 2.8rem);
+  letter-spacing: -0.06em;
+}
+
+.guide-step p {
+  color: var(--muted);
+}
+
+.step-badge {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 950;
+}
+
+.final-step {
+  background: var(--bg-soft);
+}
+
+.on-light .pill-link,
+.card .pill-link {
+  background: var(--primary-dark);
+  color: #fff;
+  border-color: var(--primary-dark);
+}
+
+.on-light .pill-link:hover,
+.on-light .pill-link:focus-visible,
+.card .pill-link:hover,
+.card .pill-link:focus-visible {
+  background: var(--primary);
+  color: #fff;
+}
+
+.note-box {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  background: var(--accent-soft);
+  color: var(--primary-dark) !important;
+  font-weight: 750;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.1rem;
+}
+
+.app-link {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-height: 86px;
+  padding: 1rem;
+  border-radius: 22px;
+  background: var(--primary-dark);
+  color: #fff;
+  text-decoration: none;
+}
+
+.app-link:hover,
+.app-link:focus-visible {
+  background: var(--primary);
+  outline: none;
+}
+
+.app-link img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.app-link strong,
+.app-link small {
+  display: block;
+}
+
+.app-link small {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.text-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: var(--accent);
+  color: #241904;
+  font-weight: 950;
+}
+
+.plain-steps {
+  color: var(--muted);
+  padding-left: 1.35rem;
+}
+
+.plain-steps li + li {
+  margin-top: 0.75rem;
+}
+
+.three-card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.check-list {
+  color: var(--muted);
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.check-list li + li {
+  margin-top: 0.55rem;
+}
+
+.faq-list {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(16, 30, 54, 0.06);
+}
+
+.faq-item {
+  padding: 1.3rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item:last-child {
+  border-bottom: 0;
+}
+
+.faq-item h3 {
+  color: var(--primary-dark);
+}
+
+.faq-item p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.card-highlight {
+  border-color: rgba(40, 91, 84, 0.35);
+  background: var(--bg-soft);
+}
+
+.card-badge {
+  display: inline-flex;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #241904;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.mesh-table-wrap {
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(16, 30, 54, 0.06);
+}
+
+.mesh-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+.mesh-table th,
+.mesh-table td {
+  text-align: left;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.mesh-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.mesh-table th {
+  color: var(--primary-dark);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.mesh-table td {
+  color: var(--muted);
+}
+
+.mesh-table a,
+.card a,
+.guide-step a:not(.pill-link),
+.faq-item a {
+  color: var(--primary-dark);
+  font-weight: 850;
+}
+
+@media (max-width: 980px) {
+  .three-card-grid,
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-hero-inner {
+    padding: 78px 0 104px;
+  }
+
+  .guide-step {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+  }
+}
+

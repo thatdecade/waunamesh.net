@@ -6,6 +6,7 @@
   <title>Getting Started | WaunaMesh</title>
   <meta name="description" content="A friendly beginner guide for joining WaunaMesh with MeshCore.">
   <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="assets/img/waunamesh/waunakee-water-tower-1600.webp" as="image" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -14,8 +15,8 @@
   <header class="site-header" id="site-header">
     <div class="container nav-inner">
       <a class="brand" href="index.html#top" aria-label="WaunaMesh home">
-        <img class="brand-logo" src="assets/img/waunamesh/waunamesh-logo-transparent.png" alt="WaunaMesh">
-        <img class="brand-mark" src="assets/img/waunamesh/waunamesh-logo-icon.png" alt="" aria-hidden="true">
+        <img class="brand-logo" src="assets/img/waunamesh/waunamesh-logo-transparent.png" alt="WaunaMesh" width="356" height="228" decoding="async">
+        <img class="brand-mark" src="assets/img/waunamesh/waunamesh-logo-icon.png" alt="" aria-hidden="true" width="108" height="108" decoding="async">
         <span class="brand-copy">
           <span class="brand-name">WaunaMesh</span>
           <span class="brand-subtitle">Part of Madison Mesh</span>
@@ -118,7 +119,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-brand-logo">
-          <img src="assets/img/madmesh/logo.png" alt="Madison Mesh logo" width="36" height="36">
+          <img src="assets/img/madmesh/logo.png" alt="Madison Mesh logo" width="36" height="36" loading="lazy" decoding="async">
           <h3>Madison Mesh</h3>
         </div>
         <p>Building a community-owned mesh radio<br>network in Madison, Wisconsin.</p>
@@ -177,22 +178,6 @@
     </div>
   </footer>
 
-  <script>
-    const siteHeader = document.getElementById('site-header');
-    const navToggle = siteHeader.querySelector('.nav-toggle');
-    const navLinks = siteHeader.querySelectorAll('.nav-links a');
-
-    navToggle.addEventListener('click', () => {
-      const isOpen = siteHeader.classList.toggle('is-open');
-      navToggle.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    navLinks.forEach((link) => {
-      link.addEventListener('click', () => {
-        siteHeader.classList.remove('is-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-  </script>
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
   <title>WaunaMesh | Community radio for Waunakee</title>
   <meta name="description" content="WaunaMesh is a community-powered mesh radio project helping Waunakee stay connected, learn together, and link into the Madison Mesh network.">
   <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="assets/img/waunamesh/waunakee-water-tower-1600.webp" as="image" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -14,8 +15,8 @@
   <header class="site-header" id="site-header">
     <div class="container nav-inner">
       <a class="brand" href="#top" aria-label="WaunaMesh home">
-        <img class="brand-logo" src="assets/img/waunamesh/waunamesh-logo-transparent.png" alt="WaunaMesh">
-        <img class="brand-mark" src="assets/img/waunamesh/waunamesh-logo-icon.png" alt="" aria-hidden="true">
+        <img class="brand-logo" src="assets/img/waunamesh/waunamesh-logo-transparent.png" alt="WaunaMesh" width="356" height="228" decoding="async">
+        <img class="brand-mark" src="assets/img/waunamesh/waunamesh-logo-icon.png" alt="" aria-hidden="true" width="108" height="108" decoding="async">
         <span class="brand-copy">
           <span class="brand-name">WaunaMesh</span>
           <span class="brand-subtitle">Part of Madison Mesh</span>
@@ -63,7 +64,10 @@
         </div>
         <div class="feature-image">
           <div class="image-card">
-            <img src="assets/img/waunamesh/heltec-meshcore-radio.jpg" alt="A small handheld mesh radio node on a table">
+            <picture>
+              <source srcset="assets/img/waunamesh/heltec-meshcore-radio-960.webp" type="image/webp">
+              <img src="assets/img/waunamesh/heltec-meshcore-radio.jpg" alt="A small handheld mesh radio node on a table" width="960" height="976" loading="lazy" decoding="async">
+            </picture>
             <div class="image-caption">A small mesh radio node like the ones community members can use to join the network.</div>
           </div>
         </div>
@@ -117,7 +121,7 @@
               class="map-embed"
               title="Madison MeshCore live map"
               src="https://msn.meshmapper.net/embed.php?lat=43.19194&lon=-89.45567&zoom=13&geofence=0"
-              loading="lazy">
+              loading="lazy" width="1180" height="420" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
       </div>
@@ -176,15 +180,24 @@
     <section class="section" aria-label="Project gallery">
       <div class="container gallery">
         <figure>
-          <img src="assets/img/madmesh/node-eave.jpg" alt="A mesh radio node mounted under a roof eave">
+          <picture>
+            <source srcset="assets/img/madmesh/node-eave-900.webp" type="image/webp">
+            <img src="assets/img/madmesh/node-eave.jpg" alt="A mesh radio node mounted under a roof eave" width="900" height="1200" loading="lazy" decoding="async">
+          </picture>
           <figcaption>Outdoor nodes can quietly extend coverage from homes and community buildings.</figcaption>
         </figure>
         <figure>
-          <img src="assets/img/madmesh/tree-node-hanging.jpg" alt="A weatherproof mesh radio node hanging outdoors">
+          <picture>
+            <source srcset="assets/img/madmesh/tree-node-hanging-900.webp" type="image/webp">
+            <img src="assets/img/madmesh/tree-node-hanging.jpg" alt="A weatherproof mesh radio node hanging outdoors" width="900" height="601" loading="lazy" decoding="async">
+          </picture>
           <figcaption>Weatherproof nodes help the network reach across parks, neighborhoods, and open areas.</figcaption>
         </figure>
         <figure>
-          <img src="assets/img/madmesh/state-street-wide.jpg" alt="A wide view of State Street in Madison">
+          <picture>
+            <source srcset="assets/img/madmesh/state-street-wide-900.webp" type="image/webp">
+            <img src="assets/img/madmesh/state-street-wide.jpg" alt="A wide view of State Street in Madison" width="900" height="467" loading="lazy" decoding="async">
+          </picture>
           <figcaption>WaunaMesh links into the larger Madison Mesh community and its regional coverage.</figcaption>
         </figure>
       </div>
@@ -235,7 +248,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-brand-logo">
-          <img src="assets/img/madmesh/logo.png" alt="Madison Mesh logo" width="36" height="36">
+          <img src="assets/img/madmesh/logo.png" alt="Madison Mesh logo" width="36" height="36" loading="lazy" decoding="async">
           <h3>Madison Mesh</h3>
         </div>
         <p>Building a community-owned mesh radio<br>network in Madison, Wisconsin.</p>
@@ -294,22 +307,6 @@
     </div>
   </footer>
 
-  <script>
-    const siteHeader = document.getElementById('site-header');
-    const navToggle = siteHeader.querySelector('.nav-toggle');
-    const navLinks = siteHeader.querySelectorAll('.nav-links a');
-
-    navToggle.addEventListener('click', () => {
-      const isOpen = siteHeader.classList.toggle('is-open');
-      navToggle.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    navLinks.forEach((link) => {
-      link.addEventListener('click', () => {
-        siteHeader.classList.remove('is-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-  </script>
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>

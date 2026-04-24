@@ -18,19 +18,20 @@ The site explains what WaunaMesh is and how neighbors can get started with MeshC
 
 ```text
 .
-├── index.html
-├── getting-started.html
-├── hosting.html
-├── other-meshes.html
-├── LICENSE.md
-├── favicon.ico
-└── assets
-    ├── css
-    │   └── styles.css
-    └── img
-        ├── madmesh
-        ├── template
-        └── waunamesh
+|-- index.html
+|-- getting-started.html
+|-- hosting.html
+|-- other-meshes.html
+|-- LICENSE.md
+|-- favicon.ico
+`-- assets
+    |-- css
+    |   `-- styles.css
+    |-- js
+    |   `-- site.js
+    `-- img
+        |-- madmesh
+        `-- waunamesh
 ```
 
 ## Local development
@@ -40,6 +41,7 @@ Nothing to build. This is a static site.
 ## Editing notes
 
 - Main styles are in `assets/css/styles.css`.
+- Shared navigation behavior is in `assets/js/site.js`.
 - WaunaMesh-specific images are in `assets/img/waunamesh/`.
 - Madison Mesh images and logo are in `assets/img/madmesh/`.
 - The footer is repeated in each HTML file. Update all pages when changing footer links, attribution, or resource links.

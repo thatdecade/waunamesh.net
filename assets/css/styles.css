@@ -613,6 +613,7 @@ h3 {
 .sponsor-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
   gap: 1rem;
 }
 
@@ -642,6 +643,10 @@ h3 {
   outline: none;
 }
 
+.sponsor-card:focus-visible {
+  box-shadow: 0 0 0 4px rgba(255, 176, 0, 0.36), 0 22px 55px rgba(16, 30, 54, 0.12);
+}
+
 .sponsor-card::before {
   content: "";
   position: absolute;
@@ -668,6 +673,7 @@ h3 {
 
 .sponsor-card h3 {
   margin: 0.85rem 0 0.35rem;
+  color: var(--ink);
 }
 
 .sponsor-card p {

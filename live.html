@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live Map | MadisonMesh</title>
+  <meta name="description" content="View the live MadisonMesh coverage map.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .live-map-main {
+      min-height: calc(100vh - 82px);
+      min-height: calc(100dvh - 82px);
+      background: #fff;
+    }
+
+    .live-map-frame {
+      display: block;
+      width: 100%;
+      height: calc(100vh - 82px);
+      height: calc(100dvh - 82px);
+      border: 0;
+      background: #fff;
+    }
+
+    @media (max-width: 720px) {
+      .live-map-main {
+        min-height: calc(100vh - 76px);
+        min-height: calc(100dvh - 76px);
+      }
+
+      .live-map-frame {
+        height: calc(100vh - 76px);
+        height: calc(100dvh - 76px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html#top" aria-label="WaunaMesh home">
+        <img class="brand-logo" src="assets/img/waunamesh/waunamesh-logo-transparent.png" alt="WaunaMesh" width="356" height="228" decoding="async">
+        <img class="brand-mark" src="assets/img/waunamesh/waunamesh-logo-icon.png" alt="" aria-hidden="true" width="108" height="108" decoding="async">
+        <span class="brand-copy">
+          <span class="brand-name">WaunaMesh</span>
+          <span class="brand-subtitle">Part of Madison Mesh</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="main-navigation" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav id="main-navigation" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html#what">About</a></li>
+          <li><a href="index.html#where">Coverage Map</a></li>
+          <li><a href="live.html">Live Map</a></li>
+          <li><a href="getting-started.html">Getting Started</a></li>
+          <li><a href="hosting.html">Hosting</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="live-map-main" aria-label="Live WaunaMesh map">
+    <iframe class="live-map-frame" src="https://map.rflab.io/#/live" title="Live MadisonMesh map" loading="eager" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  </main>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

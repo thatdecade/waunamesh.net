@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Host a Node | WaunaMesh</title>
-  <meta name="description" content="Help Waunakee mesh coverage grow by hosting a small MeshCore radio node.">
+  <title>Host a Repeater | WaunaMesh</title>
+  <meta name="description" content="Help Waunakee mesh coverage grow by hosting a small MeshCore radio repeater.">
   <link rel="icon" href="favicon.ico">
   <link rel="preload" href="assets/img/waunamesh/waunakee-water-tower-1600.webp" as="image" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -43,9 +43,9 @@
   <main id="main" class="page-main">
     <section class="page-hero host-hero">
       <div class="container page-hero-inner">
-        <p class="kicker">Host a node</p>
+        <p class="kicker">Host a Repeater</p>
         <h1>Have a good location? You can help Waunakee connect.</h1>
-        <p>A useful host site can be a home, farm, barn, church, business, school, or community building with power, height, or a clear view across town.</p>
+        <p>A useful host site can be a home, farm, business, school, or community building. Higher the better, but you do not have to be the tallest.  Even simple small gutter mounted repeaters can really help with coverage.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="https://discord.gg/fd3JUZc2CN" target="_blank" rel="noopener noreferrer">Talk with the community</a>
           <a class="btn btn-outline" href="getting-started.html">Learn how the network works</a>
@@ -58,21 +58,20 @@
         <div class="card-grid three-card-grid">
           <article class="card"><h3>Better coverage</h3><p>Your location may bridge a gap and help messages travel across Waunakee.</p></article>
           <article class="card"><h3>Emergency resilience</h3><p>The mesh can keep local messages moving when internet or cell service is unavailable.</p></article>
-          <article class="card"><h3>Low effort</h3><p>Once installed, a fixed node can run quietly with little or no action from the host.</p></article>
+          <article class="card"><h3>Low effort</h3><p>Once installed, a repeater can run quietly with little or no action from the host.</p></article>
         </div>
 
         <section class="section inner-section">
           <div class="section-header">
             <p class="kicker">What hosting means</p>
             <h2>A small radio in a useful place.</h2>
-            <p>Hosting usually means allowing a small weatherproof radio box and antenna to be placed where it can hear other nodes. Outdoor, elevated, and clear-view locations are most valuable.</p>
+            <p>Hosting usually means allowing a small weatherproof radio box to be placed where it can hear the network. Outdoor, elevated, and clear-view locations are most valuable.</p>
           </div>
           <div class="grid-2 align-start">
             <div class="card">
               <h3>Common host locations</h3>
               <ul class="check-list">
-                <li>Homes with a good view or upper floor window</li>
-                <li>Barns, farms, and outbuildings</li>
+                <li>Homes with a good view or multistory</li>
                 <li>Churches, schools, and community buildings</li>
                 <li>Local businesses with roof or window access</li>
                 <li>High spots near the edge of current coverage</li>
@@ -88,28 +87,17 @@
           </div>
         </section>
 
-        <section class="section inner-section" id="host-application-section" data-host-application-section>
-          <div class="callout">
-            <div>
-              <p class="kicker">Limited repeater applications</p>
-              <h2>Apply to host a solar repeater.</h2>
-              <p>Waunakee-area property owners can apply for an subsidized solar repeater while inventory lasts. Approved locations are selected based on coverage value, installation feasibility, and supplies.</p>
-            </div>
-            <a class="btn btn-primary" href="apply.html" data-host-application-link>Apply to host</a>
-          </div>
-        </section>
-
         <section class="section inner-section">
           <div class="section-header"><h2>Host questions and answers</h2></div>
           <div class="faq-list">
             <article class="faq-item"><h3>What makes a location valuable?</h3><p>Height, a clear view, or a position that fills a coverage gap all help.</p></article>
-            <article class="faq-item"><h3>Does it need my internet?</h3><p>No. A MeshCore radio can pass local radio messages without using your Wi-Fi or internet connection.</p></article>
-            <article class="faq-item"><h3>Does it use much electricity?</h3><p>No. These are small, low-power radios. Many fixed nodes can run from a USB power adapter, and some locations can use solar power.</p></article>
-            <article class="faq-item"><h3>Will it interfere with Wi-Fi, TV, or cell service?</h3><p>No. The radios use low-power LoRa in the 902 to 928 MHz ISM band in the United States, which is different from normal Wi-Fi and cellular frequencies.</p></article>
-            <article class="faq-item"><h3>Is a license required?</h3><p>No license is required for typical MeshCore LoRa mesh devices in this project.</p></article>
-            <article class="faq-item"><h3>Who maintains it?</h3><p>The community member or team placing the node should handle setup, updates, and removal. Hosts do not need to manage the software.</p></article>
-            <article class="faq-item"><h3>Can I ask for it to be removed?</h3><p>Yes. A host may ask for the node to be moved or removed at any time.</p></article>
-            <article class="faq-item"><h3>What data passes through it?</h3><p>Mesh nodes relay short radio messages from the local mesh network. A host node is not a connection to your home network.</p></article>
+            <article class="faq-item"><h3>Does it need my internet?</h3><p>No. A MeshCore radio can pass local radio messages without using your wifi or internet connection.</p></article>
+            <article class="faq-item"><h3>Does it use much electricity?</h3><p>No. These are small, low-power radios. Can run from a USB power adapter or self solar powered.</p></article>
+            <article class="faq-item"><h3>Will it interfere with wifi, TV, or cell service?</h3><p>No. The radios use low-power LoRa in the 902 to 928 MHz band, which is different from normal wifi, cellular, tv frequencies.</p></article>
+            <article class="faq-item"><h3>Is a FCC license required?</h3><p>No license is required for the MeshCore LoRa mesh devices in this project.</p></article>
+            <article class="faq-item"><h3>Who maintains it?</h3><p>The community member or team placing the repeater handle setup, updates, and removal. Hosts do not need to manage the software.</p></article>
+            <article class="faq-item"><h3>Can I ask for it to be removed?</h3><p>Yes. A host may ask for the repeater to be moved or removed at any time.</p></article>
+            <article class="faq-item"><h3>What data passes through it?</h3><p>Mesh repeaters relay text messages from the local mesh network. A host repeater is not connected to your home internet.</p></article>
           </div>
         </section>
 
@@ -123,6 +111,18 @@
             <a class="btn btn-primary" href="https://discord.gg/fd3JUZc2CN" target="_blank" rel="noopener noreferrer">Join Discord</a>
           </div>
         </section>
+        
+        <section class="section inner-section" id="host-application-section" data-host-application-section>
+          <div class="callout">
+            <div>
+              <p class="kicker">Reduced Cost Repeaters</p>
+              <h2>Apply for a WaunaMesh built solar repeater.</h2>
+              <p>Waunakee-area property owners can apply for an subsidized solar repeater from WaunaMesh, while supplies last.</p>
+            </div>
+            <a class="btn btn-primary" href="apply.html" data-host-application-link>Apply to host</a>
+          </div>
+        </section>
+
       </div>
     </section>
   </main>
@@ -156,7 +156,7 @@
           <h4>Get Involved</h4>
           <ul class="larger-bottom">
             <li><a href="getting-started.html">Getting Started</a></li>
-            <li><a href="hosting.html">Host a Node</a></li>
+            <li><a href="hosting.html">Host a Repeater</a></li>
           </ul>
         </div>
 
@@ -191,5 +191,6 @@
   </footer>
 
   <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/hosting.js" defer></script>
 </body>
 </html>

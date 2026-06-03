@@ -3,7 +3,7 @@
   var soldOutClassName = 'application-pricing-card-sold-out';
 
   var soldOutOfferContent = {
-    'offer-gutter-clip-repeater': {
+    'available-gutter-clip-repeater': {
       webpSrcset: 'assets/img/waunamesh/application-gutter-clip-repeater-900.webp',
       imageSrc: 'assets/img/waunamesh/application-gutter-clip-repeater.jpg',
       imageAlt: 'A compact gutter clip style solar repeater shown as out of stock',
@@ -11,7 +11,7 @@
       valueText: 'Unavailable',
       descriptionText: 'This gutter clip repeater option is currently out of stock. Applications can still be reviewed, but this repeater is unavailable until supply is restocked.'
     },
-    'offer-pole-mount-repeater': {
+    'available-pole-mount-repeater': {
       webpSrcset: 'assets/img/waunamesh/application-pole-mount-repeater-900.webp',
       imageSrc: 'assets/img/waunamesh/application-pole-mount-repeater.jpg',
       imageAlt: 'A pole mounted solar repeater shown as out of stock',
